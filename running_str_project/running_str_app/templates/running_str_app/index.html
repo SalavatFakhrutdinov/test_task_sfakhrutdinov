@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Создать бегущую строку</title>
+    <title>Create running string</title>
 </head>
 <body>
-    <h1>Создать бегущую строку</h1>
+    <h1>Create running string</h1>
     <form method="POST">
     {% csrf_token %}
-        <label for="text">Введите текст:</label>
+        <label for="text">Input a string:</label>
         <input type="text" id="text" name="text" required>
         <br>
-        <label for="duration">Длительность (сек):</label>
+        <label for="duration">Duration (sec):</label>
         <input type="number" id="duration" name="duration" value="3" min="1">
         <br>
-        <button type="submit">Создать видео</button>
+        <button type="submit">Create video</button>
     </form>
 </body>
 </html>
